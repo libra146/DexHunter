@@ -55,7 +55,7 @@ jobs:
 
       - name: Upload artifacts
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.release.outputs.name }}
           path: ./target/${{ matrix.abi }}/release/dexhunter
